@@ -1,0 +1,84 @@
+/* App.css - Dark Maroon Global/Navbar Styles */
+
+nav.navbar {
+  background: rgba(26, 10, 18, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(139, 32, 64, 0.3);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Elegant, much bigger, maroon-themed brand design */
+nav.navbar .brand {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #fff0f5;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 0 2px 15px rgba(192, 64, 96, 0.6), 0 0 5px rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+nav.navbar .brand:hover {
+  text-shadow: 0 4px 20px rgba(220, 80, 110, 0.8), 0 0 10px rgba(255, 255, 255, 0.5);
+  transform: scale(1.02);
+  color: #ffffff;
+}
+
+nav.navbar .links {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+nav.navbar .links a {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  color: #e8c0c8;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+nav.navbar .links a:hover {
+  background: rgba(192, 64, 96, 0.15);
+  color: #fff;
+}
+
+/* Make sure the Logout/Register call-to-action stands out */
+nav.navbar .links a:last-child {
+  background: linear-gradient(135deg, #c04060 0%, #8b2040 100%);
+  color: white;
+  box-shadow: 0 2px 10px rgba(139, 32, 64, 0.4);
+}
+
+nav.navbar .links a:last-child:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(192, 64, 96, 0.5);
+  background: linear-gradient(135deg, #d84b6f 0%, #9b2a45 100%);
+}
+
+/* Reset default margins on root to ensure full bleed backgrounds work nicely */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1a0a12;
+}
+
+/* Fix any #root constraints from default Vite */
+#root {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
